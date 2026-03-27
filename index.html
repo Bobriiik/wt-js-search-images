@@ -1,19 +1,6 @@
-<!DOCTYPE html>
-<html lang="uk">
-  <head>
-    <link rel="stylesheet" href="./css/styles.css" />
-<link
-  rel="stylesheet"
-  href="https://cdn.jsdelivr.net/npm/izitoast/dist/css/iziToast.min.css"
-/>
-<link
-  rel="stylesheet"
-  href="https://cdn.jsdelivr.net/npm/simplelightbox/dist/simple-lightbox.min.css"
-/>
-  </head>
-
-  <body>
-    <header class="header">
+<body>
+  <header class="header">
+    <div class="container">
       <h1 class="title">Пошук зображень</h1>
 
       <form class="search-form">
@@ -22,50 +9,42 @@
           type="text"
           name="searchQuery"
           autocomplete="off"
-          placeholder="Що шукаємо?"
+          placeholder="Введіть запит"
         />
-        <button type="submit" id="search-button" aria-label="Пошук">
-          <img
-            class="search-icon"
-            src="./images/search-glass.svg"
-            alt="search"
-            width="24"
-            height="24"
-          />
-        </button>
+        <button type="submit" id="search-button">Пошук</button>
       </form>
-    </header>
+    </div>
+  </header>
 
-    <main>
-      <div class="gallery" aria-live="polite"></div>
+  <main class="container">
+    <div class="gallery" aria-live="polite"></div>
 
-      <nav class="pagination-container is-hidden" id="pagination-container">
-        <button
-          class="pagination-button"
-          id="prev-button"
-          title="Previous page"
-          aria-label="Previous page"
-        >
-          &lt;
-        </button>
+    <nav class="pagination-container is-hidden" id="pagination-container">
+      <button
+        class="pagination-button"
+        id="prev-button"
+        title="Previous page"
+        aria-label="Previous page"
+      >
+        Назад
+      </button>
 
-        <div id="pagination-numbers"></div>
+      <div id="pagination-numbers"></div>
 
-        <button
-          class="pagination-button"
-          id="next-button"
-          title="Next page"
-          aria-label="Next page"
-        >
-          &gt;
-        </button>
-      </nav>
-    </main>
+      <button
+        class="pagination-button"
+        id="next-button"
+        title="Next page"
+        aria-label="Next page"
+      >
+        Далі
+      </button>
+    </nav>
+  </main>
 
-    <script src="https://cdn.jsdelivr.net/npm/axios/dist/axios.min.js"></script>
-<script src="https://cdn.jsdelivr.net/npm/izitoast/dist/js/iziToast.min.js"></script>
-<script src="https://cdn.jsdelivr.net/npm/simplelightbox/dist/simple-lightbox.min.js"></script>
-<script src="./js/api.js"></script>
-<script src="./js/pagination.js"></script>
-  </body>
-</html>
+  <script src="https://cdn.jsdelivr.net/npm/axios/dist/axios.min.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/izitoast/dist/js/iziToast.min.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/simplelightbox/dist/simple-lightbox.min.js"></script>
+  <script src="./js/api.js"></script>
+  <script src="./js/pagination.js"></script>
+</body>
