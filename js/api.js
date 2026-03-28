@@ -3,7 +3,7 @@ import iziToast from 'izitoast';
 import SimpleLightbox from 'simplelightbox';
 import { getPaginationRange } from './pagination.js';
 
-const API_KEY = 'ТУТ_СВІЙ_PIXABAY_KEY';
+const API_KEY = '55192474-4ac14a3eef79a9c3a5b4b0580';
 const BASE_URL = 'https://pixabay.com/api/';
 
 const form = document.querySelector('#search-form');
