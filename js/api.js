@@ -1,4 +1,3 @@
-import axios from 'axios';
 import iziToast from 'izitoast';
 import SimpleLightbox from 'simplelightbox';
 
